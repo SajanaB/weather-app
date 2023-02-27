@@ -7,7 +7,7 @@ const app = express();
 // Middlewares
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, '../client/dist')));
+//app.use(express.static(path.join(__dirname, '../client/dist')));
 
 const PORT = process.env.PORT || 3000;
 
