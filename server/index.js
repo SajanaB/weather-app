@@ -1,5 +1,5 @@
 const express = require('express');
-const axios = require('axios');
+
 const path = require('path');
 const { WEATHER_APP_URL, API_KEY } = require('../config.js');
 const { getWeatherData } = require('./api');
@@ -20,7 +20,6 @@ app.get('/weather', async (req, res)  => {
 })
 
 const PORT = process.env.PORT || 3000;
-
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
