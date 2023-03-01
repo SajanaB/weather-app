@@ -1,11 +1,14 @@
 import React from 'react';
-import Temperature from './components/Temperature.jsx';
+import Search from './components/Search.jsx';
+import './App.scss';
 
 const App = () => {
   return (
     <div>
-      Weather App
-      <Temperature/>
+      <div className='title'>
+      Weather World
+      </div>
+      <Search/>
     </div>
   )
 }

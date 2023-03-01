@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const { WEATHER_APP_URL, API_KEY } = require('../config.js');
 const { getWeatherData } = require('./api');
-const {weatherData} = require('./controller');
 const axios = require('axios');
 
 
@@ -18,8 +17,9 @@ app.get('/weather', async (req, res)  => {
   console.log('Body', req.body)
   console.log('Params', req.params)
   console.log('Query', req.query)
-  let cityName = 'Austin';
-  let weatherData = await getWeatherData(cityName, API_KEY)
+  let cityName = req.query.q;
+  let metrics = req.query.units
+  let weatherData = await getWeatherData(cityName, API_KEY, metrics)
   .then(({data}) => {
     res.status(200).send(data);
   })

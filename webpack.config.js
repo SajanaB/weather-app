@@ -58,6 +58,8 @@ module.exports = {
         test: /\.(png|jpg|gif)$/i,
         type: 'asset',
       }
+      { test: /\.css$/, use: 'css-loader' },
+      { test: /\.ts$/, use: 'ts-loader' },
     ]
   }
 };
