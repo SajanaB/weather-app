@@ -20,7 +20,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 
 ## Overview
-Weather Worl is an application built with [React](https://reactjs.org/) and [Node.js](https://nodejs.org/en/). The app shows the weather based on the searched city around the world.
+Weather World is an application built with [React](https://reactjs.org/) and [Node.js](https://nodejs.org/en/). The app shows the weather based on the searched city around the world.
 
 This project is about designing simple weather with app below mentioned features:
 
