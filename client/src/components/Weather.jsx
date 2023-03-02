@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Weather.scss';
 import Mood from './Mood.jsx';
+import SoundP from './Sound.jsx';
 import { WiSunrise, WiSunset, WiHumidity, WiWindy } from "react-icons/wi";
 
 
@@ -25,7 +26,11 @@ const Weather = (weatherInfoMain) => {
   </div>
   <br/>
     <article className='tempEl'>
+
       <div className='mood'>
+        <div>
+      <SoundP className='sound-button'/>
+      </div>
       {main}
       </div>
 
