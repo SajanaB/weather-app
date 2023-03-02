@@ -12,59 +12,59 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Overview
+Weather Worl is an application built with [React](https://reactjs.org/) and [Node.js](https://nodejs.org/en/). The app shows the weather based on the searched city around the world.
 
-### `npm run eject`
+This project is about designing simple weather with app below mentioned features:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Temperature
+The app shows the temperature of the searched city in Farenheit.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Weather mood and location
+The app shows if the weather is clear, sunny etc.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Humidity
+The app shows the humidity of the searched city.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Wind speed
+The app shows the wind speed of the searcged city.
 
-## Learn More
+## weather within & pause
+The weather within button will play some meditative music on click if you to close your eyes and focus within yourself.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
+The main purpose of this repository is for education and practicing building React application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Installation
+1. Get the API key from Open Weather Map website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Fork and clone this repo, then open the terminal and navigate to the project root directory.
 
-### Analyzing the Bundle Size
+3. Change config.example.js file to config.js, and fill the API key.
+```js
+     API_KEY: ''
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. In the terminal run the following scripts:
 
-### Making a Progressive Web App
+```
+npm install
+npm run build
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. Navigate to [localhost:3000](http://localhost:3000) in the browser.
 
-### Advanced Configuration
+## Contact
+#### Creator:
+  + [Sajana Balal](https://github.com/SajanaB)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#top">back to top</a>)</p>

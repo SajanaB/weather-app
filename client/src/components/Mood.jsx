@@ -3,7 +3,6 @@ import ReactAnimatedWeather from 'react-animated-weather';
 import './Mood.scss';
 
 const Mood = (main) => {
-  console.log(main)
   const [ mood, setMood ] = useState({});
   const defaults = {
     icon: ['CLEAR_DAY', 'CLOUDY', 'PARTLY_CLOUDY_DAY', 'PARTLY_CLOUDY_NIGHT', 'CLEAR_NIGHT', 'RAIN', 'SLEET', 'SNOW', 'WIND', 'FOG' ],
@@ -11,7 +10,7 @@ const Mood = (main) => {
     size: 250,
     animate: true
   };
-  console.log(main === 'Haze')
+
   if (main.main === 'Haze' || main.main === 'Clouds') {
     return (
     <ReactAnimatedWeather className='icons' icon={defaults.icon[1]}

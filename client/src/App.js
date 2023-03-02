@@ -5,7 +5,7 @@ import './App.scss';
 
 const App = () => {
   return (
-    <div>
+    <div className='app-container'>
       <div className='title'>
       Weather World
       </div>

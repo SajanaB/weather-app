@@ -4,25 +4,21 @@ import Mood from './Mood.jsx';
 import SoundP from './Sound.jsx';
 import { WiSunrise, WiSunset, WiHumidity, WiWindy } from "react-icons/wi";
 
-
-
 const Weather = (weatherInfoMain) => {
   const [main, setMain] = useState('');
-
-  let riseSec = weatherInfoMain.weatherInfoMain.sunrise;
+  let weather = weatherInfoMain.weatherInfoMain;
+  let riseSec = weather.sunrise;
   let riseDate = new Date(riseSec * 1000);
   let riseTimeStr = `${riseDate.getHours()}:${riseDate.getMinutes()}`;
 
-  let setSec = weatherInfoMain.weatherInfoMain.sunset;
+  let setSec = weather.sunset;
   let setDate = new Date(setSec * 1000);
   let setTimeStr = `${setDate.getHours()}:${setDate.getMinutes()}`;
-
-  let temp = weatherInfoMain.weatherInfoMain.tempInFarenheit
 
   return (
     <>
   <div className='mood-placement'>
-  <Mood main={weatherInfoMain.weatherInfoMain.main}/>
+  <Mood main={weather.main}/>
   </div>
   <br/>
     <article className='tempEl'>
@@ -36,12 +32,12 @@ const Weather = (weatherInfoMain) => {
 
       <div className='temp'>
         <div className='faren'>
-          <span>{ temp }&deg;F</span>
+          <span>{ weather.tempInF }&deg;F</span>
         </div>
 
         <div className='main-name-country'>
-          <div className='main'>{ weatherInfoMain.weatherInfoMain.main }</div>
-          <div className='name-country'> { weatherInfoMain.weatherInfoMain.name }, { weatherInfoMain.weatherInfoMain.country }</div>
+          <div className='main'>{ weather.main }</div>
+          <div className='name-country'> { weather.name }, { weather.country }</div>
         </div>
       </div>
 
@@ -70,7 +66,7 @@ const Weather = (weatherInfoMain) => {
             <div className='four-part-section'>
               <i>{ WiHumidity() }</i>
             <p className='leftest'>
-              {weatherInfoMain.weatherInfoMain.humidity } <br/>
+              {weather.humidity } <br/>
                Humidity
               </p>
           </div>
@@ -78,7 +74,7 @@ const Weather = (weatherInfoMain) => {
           <div className='four-part-section'>
               <i>{ WiWindy() }</i>
             <p className='leftest'>
-              { weatherInfoMain.weatherInfoMain.windSpeed } <br/>
+              { weather.windSpeed } <br/>
                Wind Speed
               </p>
           </div>
