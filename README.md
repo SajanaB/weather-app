@@ -25,7 +25,7 @@ Weather World is an application built with [React](https://reactjs.org/) and [No
 This project is about designing simple weather app with below mentioned features:
 
 ## Temperature
-The app shows the temperature of the searched city in Farenheit.
+The app shows the temperature of the searched city in Fahrenheit.
 
 ## Weather mood and location
 The app shows if the weather is clear, sunny etc.
