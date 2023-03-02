@@ -22,7 +22,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 ## Overview
 Weather World is an application built with [React](https://reactjs.org/) and [Node.js](https://nodejs.org/en/). The app shows the weather based on the searched city around the world.
 
-This project is about designing simple weather with app below mentioned features:
+This project is about designing simple weather app with below mentioned features:
 
 ## Temperature
 The app shows the temperature of the searched city in Farenheit.
@@ -34,7 +34,7 @@ The app shows if the weather is clear, sunny etc.
 The app shows the humidity of the searched city.
 
 ## Wind speed
-The app shows the wind speed of the searcged city.
+The app shows the wind speed of the searched city.
 
 ## weather within & pause
 The weather within button will play some meditative music on click if you to close your eyes and focus within yourself.
