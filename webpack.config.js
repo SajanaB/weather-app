@@ -64,7 +64,13 @@ module.exports = {
         test: /\.mp3$/,
         include: SRC_DIR,
         loader: 'file-loader'
-      }
+      },
+      {
+        test: /\.(mp4)$/,
+        loader: 'file',
+        loader: 'file-loader'
+      },
+
     ]
   }
 };
