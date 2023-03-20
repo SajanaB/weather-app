@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rad: 1rem;
+  --dur: 0.3s;
+  --color-dark: #d0eaf8;
+  --font-fam: "Lato", sans-serif;
+  --height: 5rem;
+  --btn-width: 9rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+}
+
+body {
+  background-color: #f5f5f5;
+  background: var(--color-dark);
+  height:auto;
+  min-height:auto;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 0.2rem;
+  padding-top: 0%;
+  display:block;
+  color: #75d1f2;
+}
+#video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -1;
+}
+
+
+

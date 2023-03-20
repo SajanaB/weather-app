@@ -1,0 +1,22 @@
+.sound-button {
+  width: 90px;
+  height: 42px;
+  border: none;
+  background: #82d5f3;
+  text-align: center;
+  color: rgb(242, 243, 245);
+  border-radius: 5px 5px 5px 5px;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+
+.text {
+  font-size: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: aliceblue;
+  font-weight: lighter;
+  color: azure;
+}
+.sound-button:hover {
+  background-color: #17b8ce;
+}
