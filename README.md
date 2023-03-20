@@ -37,7 +37,7 @@ The app shows the humidity of the searched city.
 The app shows the wind speed of the searched city.
 
 ## weather within & pause
-The weather within button will play some meditative music on click if you to close your eyes and focus within yourself.
+The weather within button will play a meditative music on click if you want to focus within yourself and also will launch a modal of a relaxing video to go with the music.
 
 ## Usage
 The main purpose of this repository is for education and practicing building React application.
