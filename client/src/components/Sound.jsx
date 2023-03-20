@@ -1,39 +1,42 @@
 import React, { useState, useEffect } from 'react';
-import Sound from '../audioClip/Audio.mp3';
+import Sound from '../audioClip/Audio2.mp3';
 import { Howl, Howler } from 'howler';
 import PopText from './PopText.jsx';
 import './Sound.scss';
 
-const audio = { sound: Sound, label: 'Close your eyes and find some light if you are feeling cloudy' };
-
 const SoundP = () => {
-  const sound = new Howl({
-    src:[audio.sound],
-    html5: true,
-  })
+  let audioP = new Audio(Sound);
+  const [buttonpop, setButtonpop] = useState(false);
 
+  const closeModal = () => {
+    return setButtonpop(false);
+  }
+
+  let isPlaying = false;
   const weatherWithinClick = () =>{
-    sound.play();
+    if (isPlaying) {
+      audioP.play();
+    setButtonpop(true);
+    } else {
+      audioP.pause();
+    }
+    isPlaying = !isPlaying;
   }
 
-  const soundPause = () => {
-    sound.pause();
-  }
+  // const soundPause = () => {
+  //   audioP.pause();
+  // }
   return (
     <div>
       <button className='sound-button'onClick={weatherWithinClick}
       >weather within
       </button>
-      <div>
+      {buttonpop && <PopText closeModal={closeModal}/>}
+      {/* <div>
       <button className='sound-button' onClick={soundPause}>pause</button>
-    </div>
+    </div> */}
     <br/>
     </div>
   )
-  // return (
-  //   <audio>
-  //     <source src={Sound}/>
-  //   </audio>
-  // )
 }
 export default SoundP;

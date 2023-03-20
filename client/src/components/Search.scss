@@ -47,3 +47,9 @@ wrapper {
     0 17px 17px 0 rgba(39, 40, 42, 0.15);
     border-radius: 10px;
 }
+
+@media (max-width: 800px) {
+  .Search {
+    flex-direction: column;
+  }
+}

@@ -33,6 +33,7 @@ const Weather = (weatherInfoMain) => {
       <div className='temp'>
         <div className='faren'>
           <span>{ weather.tempInF }&deg;F</span>
+          <span className='feels-like'>Feels Like{ weather.tempInF }&deg;F</span>
         </div>
 
         <div className='main-name-country'>
